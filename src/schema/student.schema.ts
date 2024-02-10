@@ -1,24 +1,22 @@
-
-import { Prop, Schema, SchemaFactory} from '@nestjs/mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 // name of the collection
 @Schema()
 export class Student {
-    @Prop()
-    name: string;
+  @Prop()
+  name: string;
 
-    @Prop()
-    roleNumber: number;
+  @Prop()
+  roleNumber: number;
 
-    @Prop()
-    class: number;
+  @Prop()
+  class: number;
 
-    @Prop()
-    gender: string;
+  @Prop()
+  gender: string;
 
-    @Prop()
-    marks: number;
-    
+  @Prop()
+  marks: number;
 }
 
 export const StudentSchema = SchemaFactory.createForClass(Student);
